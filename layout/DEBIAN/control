@@ -1,0 +1,9 @@
+Package: com.mitchtreece.libherokit
+Name: libherokit
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Small support library that allows quick access to common SpringBoard & application tasks.
+Maintainer: Mitch Treece
+Author: Mitch Treece <mitchtreece@me.com>
+Section: Development
