@@ -1,5 +1,4 @@
 #libherokit#
-----
 
 ##Overview##
 If you've ever tried making a mobile substrate tweak for iOS, you know just how tedious it can be looking up, finding, and testing SpringBoard related code. In the process of developing my various tweaks and tools, I have thrown together a small library of common SpringBoard & application methods. After some organizing, compatibility checking, and overall fine tuning, I give you libherokit — an iOS 5+ convenience library that just makes life easier.
