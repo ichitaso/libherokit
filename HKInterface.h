@@ -25,6 +25,18 @@
 - (void)setBackgroundingEnabled:(BOOL)enabled forDisplayIdentifier:(NSString *)displayID;
 @end
 
+@interface SBHUDView : UIView
+@property(retain, nonatomic) UIImage *image;
+@property(retain, nonatomic) NSString *subtitle;
+@property(retain, nonatomic) NSString *title;
+- (id)initWithHUDViewLevel:(int)level;
+@end
+
+@interface SBHUDController
++ (id)sharedHUDController;
+- (void)presentHUDView:(SBHUDView *)hud autoDismissWithDelay:(NSTimeInterval)delay;
+@end
+
 @interface SBUIController
 + (id)sharedInstance;
 - (void)activateApplicationFromSwitcher:(SBApplication *)app;

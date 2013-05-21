@@ -38,6 +38,9 @@
 - (void)toggleNotificationCenter; // Toggles notification center
 - (void)toggleTorch; // Toggles the device's LED flash-light on & off
 
+// Misc
+- (void)showHUDWithImage:(UIImage *)image title:(NSString *)title subtitle:(NSString *)subtitle dismissAfterDelay:(NSTimeInterval)delay; // Shows a standard SBHUDView with a given image
+
 // iOS 5
 - (SBDisplayStack *)preActivateDisplayStack; // Returns the preActivate display stack
 - (SBDisplayStack *)activeDisplayStack; // Returns the active display stack

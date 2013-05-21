@@ -375,6 +375,16 @@ static id scheduledTransaction = nil;
 	}
 }
 
+- (void)showHUDWithImage:(UIImage *)image title:(NSString *)title subtitle:(NSString *)subtitle dismissAfterDelay:(NSTimeInterval)delay
+{
+	SBHUDView *hud = [[%c(SBHUDView) alloc] initWithHUDViewLevel:0];
+	hud.image = image;
+	hud.title = title;
+	hud.subtitle = subtitle;
+	[[%c(SBHUDController) sharedHUDController] presentHUDView:hud autoDismissWithDelay:delay];
+	[hud release];
+}
+
 #pragma mark iOS 5
 
 - (SBDisplayStack *)preActivateDisplayStack { return HKPreActivateDisplayStack; }
